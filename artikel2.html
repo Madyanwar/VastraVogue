@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- custom css file cdn link -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+.container {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.article-image {
+  width: 30%;
+  max-width: 400px;
+  height: auto;
+  margin: 20px auto 20px auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.article-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.article-paragraph {
+  font-size: 1em;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 0 0 10px 0;
+}
+  </style>
+</head>
+<body>
+  <!-- header section starts  -->
+  <header class="header">
+
+    <a href="#" class="logo"><i class="fa-solid fa-fashion"></i> Vastra vague </a>
+
+    <form action="" class="search-form">
+      <input type="search" name="" id="searchBox" placeholder="Cari disini...">
+      <label for="searchBox" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+      <div class="fas fa-search" id="search-btn"></div>
+      <div class="fas fa-moon" id="theme-btn"></div>
+      <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <nav class="navbar">
+      <a href="#home">home</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#packages">Trift</a>
+      <a href="#services">Keistimewaan</a>
+      <a href="#pricing">Paket</a>
+      <a href="#review">review</a>
+      <a href="#contact">Pemesanan</a>
+      <a href="#blogs">blogs</a>
+    </nav>
+
+    <form action="" class="login-form">
+
+      <div class="inputBox">
+        <span>username</span>
+        <input type="text" name="" id="" placeholder="enter your name">
+      </div>
+
+      <div class="inputBox">
+        <span>password</span>
+        <input type="password" name="" id="" placeholder="enter your password">
+      </div>
+
+      <div class="remember">
+        <input type="checkbox" name="" id="login-remember">
+        <label for="login-remember">remember me</label>
+      </div>
+
+      <input type="submit" value="login" class="btn">
+
+    </form>
+
+  </header>
+  <!-- header section ends  -->
+
+  <!-- Article Content -->
+  <section class="packages" id="packages">
+    <div class="container">
+        <div class="article">
+            <!-- Gambar Artikel -->
+            <img src="images/blog-1.jpeg" alt="Gambar Artikel" class="article-image">
+
+            <!-- Judul Artikel -->
+            <h1 class="article-title">Artikel Mata Kuliah Kewirausahaan Nurul Fikri 2024</h1>
+
+            <!-- Paragraf Artikel -->
+            <p class="article-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque, est a euismod tincidunt, justo est aliquet turpis, et consectetur eros tortor sed lectus. Cras ut sem at elit congue ullamcorper sit amet non nisi. Nam sit amet eros dolor. Vivamus non bibendum neque.
+            </p>
+            <p class="article-paragraph">
+                Phasellus in efficitur arcu. Vestibulum fermentum eros in justo consectetur, in scelerisque risus suscipit. Donec a faucibus turpis. Mauris a metus nec arcu tempor placerat. Fusce nec ex at purus tincidunt gravida. Integer at lacinia urna.
+            </p>
+        </div>
+    </div>
+    </section>
+
+  <!-- footer section starts  -->
+  <section class="footer">
+
+    <div class="box-container">
+
+      <div class="box" data-aos="fade-up">
+        <h3>Cabang</h3>
+        <a href="#"> <i class="fas fa-map-marker-alt"></i> Depok/Lenteng Agung</a>
+      </div>
+
+      <div class="box" data-aos="fade-up">
+        <h3>Link</h3>
+        <a href="#"> <i class="fas fa-chevron-right"></i> home </a>
+        <a href="#"> <i class="fas fa-chevron-right"></i> trift </a>
+        <a href="#"> <i class="fas fa-chevron-right"></i> keistimewaan </a>
+        <a href="#"> <i class="fas fa-chevron-right"></i> review </a>
+        <a href="#"> <i class="fas fa-chevron-right"></i> pemesanan </a>
+        <a href="#"> <i class="fas fa-chevron-right"></i> blog </a>
+      </div>
+
+      <div class="box" data-aos="fade-up">
+          <h3>informasi kontak</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +62-8829-8180-773 </a>
+          <a href="#"> <i class="fas fa-phone"></i> +62-8822-3990-014</a>
+          <a href="#"> <i class="fa-solid fa-at"></i> vastravogue@gmail.com </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Lenteng agung, Jakarta Selatan - 16360 </a>
+      </div>
+
+      <div class="box" data-aos="fade-up">
+          <h3>ikuti kami</h3>
+          <a href="https://www.instagram.com/vastra_v0gue?igsh=MWE5OWt6cGVybnlsNA=="> <i class="fab fa-instagram"></i> instagram </a>
+          <a href="#"> <i class="fab fa-whatsapp"></i> whatsapp </a>
+      </div>
+    </div>
+
+    <div class="credit"> creadet by <span>Vastra Vogue - STTNF TEKNIK INFORMATIKA 2025</span> | all rights reserved </div>
+
+  </section>
+  <!-- footer section ends  -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- custom js file link -->
+  <script src="js/script.js"></script>
+
+  <script>
+    AOS.init({
+        duration:800,
+        delay:100
+    });
+  </script>
+</body>
+</html>
