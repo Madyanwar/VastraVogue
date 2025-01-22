@@ -251,6 +251,10 @@ section{
   width: 100%;
 }
 
+.home, .about, .packages, .services, .review, .contact, .blogs, .footer{
+  padding-top: 7rem;
+}
+
 .home{
   display: flex;
   align-items: center;
@@ -289,7 +293,7 @@ section{
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .about .box-container .about-img img{
@@ -422,73 +426,6 @@ section{
   line-height: 1.8;
 }
 
-.pricing .box-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 1.5rem;
-}
-
-.pricing .box-container .box{
-  background: var(--bg-color-1);
-  border-radius: .5rem;
-  box-shadow: var(--box-shadow);
-  padding: 2rem;
-  text-align: center;
-}
-
-.pricing .box-container .box h3{
-  padding: 1rem;
-  background: var(--bg-color-2);
-  border-radius: .5rem;
-  font-size: 2rem;
-  color: var(--text-color-1);
-}
-
-.pricing .box-container .box .price{
-  padding-top: 2rem;
-}
-
-.pricing .box-container .box .price span{
-  font-size: 2rem;
-  color: var(--text-color-2);
-}
-
-.pricing .box-container .box .price .amount{
-  font-size: 5rem;
-  color: var(--text-color-1);
-  font-weight: bolder;
-}
-
-.pricing .box-container .box ul{
-  padding: .5rem 0;
-  list-style: none;
-}
-
-.pricing .box-container .box ul li{
-  padding: 1rem 0;
-  font-size: 1.7rem;
-  color: var(--text-color-2);
-}
-
-.review .review-slider{
-  box-shadow: var(--box-shadow);
-}
-
-.review .review-slider .slide{
-  background: var(--bg-color-1);
-  border-radius: .5rem;
-  text-align: center;
-  padding: 3rem;
-}
-
-.review .review-slider .slide img{
-  height: 10rem;
-  width: 10rem;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: .5rem;
-}
-
 .review .review-slider{
   box-shadow: var(--box-shadow);
 }
@@ -517,6 +454,7 @@ section{
   font-size: 1.6rem;
   color: var(--text-color-2);
   line-height: 1.7;
+  min-height: 74px;
   padding: 1rem 0;
 }
 
@@ -534,38 +472,39 @@ section{
   background: var(--blue);
 }
 
-.contact form{
-  max-width: 70rem;
-  margin: 0 auto;
-  text-align: center;
+.contact .contact-text{
+  flex: 1 1 45rem;
 }
 
-.contact form .inputBox{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.contact form textarea,
-.contact form .inputBox input{
-  width: 100%;
-  padding: 1rem;
-  font-size: 1.6rem;
+.contact .contact-text h2{
+  font-size: 2rem;
+  text-transform: uppercase;
   color: var(--text-color-1);
-  margin: .7rem 0;
-  background: var(--bg-color-1);
+}
+
+.contact .contact-text p{
+  color: var(--text-color-2);
+  font-size: 1.7rem;
+  line-height: 1.7;
+  padding: 1rem 0;
+}
+
+.contact .btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
   box-shadow: var(--box-shadow);
-  text-transform: none;
-  border-radius: .5rem;
+  transition: background-color 0.3s ease;
 }
 
-.contact form textarea{
-  height: 20rem;
-  resize: none;
-}
-
-.contact form .inputBox input{
-  width: 49%;
+.contact .btn:hover {
+  background-color: var(--secondary-color);
 }
 
 .blogs .box-container{
@@ -582,7 +521,7 @@ section{
 }
 
 .blogs .box-container .box .image{
-  height: 20rem;
+  height: 25rem;
   width: 100%;
   overflow: hidden;
   border-radius: .5rem;
@@ -606,6 +545,7 @@ section{
   font-size: 2rem;
   color: var(--text-color-1);
   line-height: 1.5;
+  height: 70px;
 }
 
 .blogs .box-container .box .content .icons{
